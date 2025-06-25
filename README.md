@@ -6,7 +6,7 @@ Java Spring Boot application to extract table metadata from a relational databas
 ## Setup
 
 ### 1. Configure Database
-Edit `application.properties` to match your DB (MySQL or H2).
+Edit `application.yml` to match your DB (MySQL or H2).
 
 ### 2. Run the Application
  - mvn clean install
@@ -24,3 +24,4 @@ mvn test
 ## Notes
 - Extend `Metadata` for more fields.
 - In the JsonPatchWriter, you can uncomment line `//appendMetadataAsJsonLine(metadata);` in order to have a single file with metadata of all tables.
+- You can also add support for Oracle, if required.
